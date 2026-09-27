@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Join Reel Notes for thoughtful movie reviews and recommendations.">
+  <title>Sign up — Reel Notes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="auth-page">
+  <aside class="auth-art">
+    <a class="wordmark" href="index.html"><span class="wordmark-icon">R</span> reel notes<span class="wordmark-period">.</span></a>
+    <div class="auth-art-copy"><p class="eyebrow">A GOOD STORY STARTS HERE</p><h1>Your next favorite<br><em>is out there.</em></h1><p>Join a small corner of the internet that still loves talking about what we watched.</p></div>
+    <p class="auth-art-foot">A LITTLE JOURNAL FOR THE BIG SCREEN · EST. 2026</p>
+  </aside>
+  <main class="auth-panel">
+    <section class="auth-inner">
+      <a class="back-link" href="index.html">← Back to the journal</a>
+      <h2>Pull up a seat.</h2>
+      <p class="auth-subtitle">Make your movie nights a little more interesting.</p>
+      <form class="auth-form" id="signup-form">
+        <label class="field-label" for="signup-name">Your name<input id="signup-name" name="name" type="text" placeholder="What should we call you?" autocomplete="name" required></label>
+        <label class="field-label" for="signup-email">Email address<input id="signup-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required></label>
+        <label class="field-label" for="signup-password">Password<span class="password-wrap"><input id="signup-password" name="password" type="password" placeholder="At least 8 characters" autocomplete="new-password" minlength="8" required><button class="password-toggle" type="button" data-target="#signup-password" aria-label="Show password">Show</button></span></label>
+        <label class="field-label" for="signup-confirm">Confirm password<input id="signup-confirm" name="confirm-password" type="password" placeholder="Type it once more" autocomplete="new-password" minlength="8" required></label>
+        <button class="auth-submit" type="submit">Create your account <span aria-hidden="true">↗</span></button>
+        <p class="auth-notice" id="auth-notice" aria-live="polite"></p>
+      </form>
+      <p class="auth-switch">Already a member? <a href="login.html">Log in</a></p>
+      <p class="demo-note">Demo only: no account details are sent or saved. Add a secure backend before using real accounts.</p>
+    </section>
+  </main>
+</body>
+</html>
